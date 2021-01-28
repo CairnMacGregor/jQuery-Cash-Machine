@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+    <link rel="stylesheet" href="/css/myStyles.css" />
+    <script defer src="js/myJs.js"></script>
+  </head>
+  <body>
+    <div data-role="page" data-title="Banking App" id="page1" data-theme="b">
+      <div data-role="header" data-position="fixed">
+        <h2>Header Main Page</h2>
+      </div>
+
+      <div id="content" data-role="content">
+        <h2>Enter Pin Below</h2>
+        <label for="">Enter Pin:</label>
+        <input type="text" id="pin" />
+        <button id="b1" onclick="checkPin()">Submit</button>
+        <label type="text" id="pin2"></label>
+        <label type="text" id="attempts"></label>
+      </div>
+      <div id="footer" data-role="footer" data-position="fixed">
+        <h2>Footer Main Page</h2>
+      </div>
+    </div>
+  </body>
+</html>

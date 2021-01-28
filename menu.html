@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MENU</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+  </head>
+  <body>
+    <div id="menu" data-role="page" data-title="menu" data-theme="b">
+      <div id="header" data-role="header" data-position="fixed">
+        <h4>Menu</h4>
+      </div>
+
+      <div id="menuContent" data-role="content">
+        <div data-role="collapsibleset" data-theme="b" data-content-theme="b">
+          <div data-role="collapsible">
+            <h3>Display Balance</h3>
+            <p>Your current balance is:</p>
+            <p id="test"></p>
+          </div>
+        </div>
+
+        <div data-role="collapsible">
+          <h3>Add funds</h3>
+          <label for="">Deposit: </label>
+          <input type="text" name="text1" id="deposit" autocomplete="off" />
+          <p id="confirmDeposit"></p>
+          <button class="ui-btn" onclick="addFunds()">Confirm Deposit</button>
+        </div>
+
+        <div data-role="collapsible">
+          <h3>Withdraw funds</h3>
+          <label for="">Withdraw: </label>
+          <input type="text" name="text2" id="withdraw" autocomplete="off" />
+          <p id="confirmWithdraw"></p>
+          <button class="ui-btn" onclick="withdrawFunds()">
+            Confirm Withdrawl
+          </button>
+        </div>
+
+        <div data-role="collapsible">
+          <h3>Exit</h3>
+          <p>Are you sure you wish to exit</p>
+          <button class="ui-btn" onclick="exit()">Confirm Exit</button>
+        </div>
+      </div>
+
+      <div id="footer" data-role="footer" data-position="fixed">
+        <h4>Footer</h4>
+      </div>
+    </div>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
